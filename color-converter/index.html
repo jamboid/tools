@@ -54,7 +54,7 @@
       position: relative;
       height: 100px;
       border: 1px solid var(--color-border);
-      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      border-radius: var(--radius-md);
       overflow: hidden;
       /* checkerboard for transparency */
       background-image:
@@ -80,13 +80,23 @@
       height: 100%;
     }
 
+    .input-label {
+      display: block;
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-2);
+    }
+
     /* Input */
     .input-wrap {
       display: grid;
       grid-template-columns: 1fr auto;
       border: 1px solid var(--color-border);
-      border-top: none;
-      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      border-radius: var(--radius-md);
       overflow: hidden;
       background: var(--color-input-bg);
       transition: border-color var(--transition-base);
@@ -263,6 +273,7 @@
         <div class="swatch" id="swatch"></div>
         <div class="swatch-empty" id="swatch-empty">Enter a color below</div>
       </div>
+      <label class="input-label" for="color-input">Color value</label>
       <div class="input-wrap" id="input-wrap">
         <input
           class="color-input"
