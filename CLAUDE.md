@@ -78,7 +78,7 @@ themeToggle.addEventListener('click', () => {
     <div class="footer-links">
       <a href="../">← Home</a>
       <span class="footer-sep">|</span>
-      <a href="https://github.com/placeholder/tools/blob/main/tool-slug/index.html"
+      <a href="https://github.com/jamboid/tools/blob/main/tool-slug/index.html"
          target="_blank" rel="noopener">View source</a>
       <span class="footer-sep">|</span>
       <span>Updated: <span id="last-updated"></span></span>
