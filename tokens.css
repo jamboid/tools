@@ -1,0 +1,84 @@
+/* ============================================================
+   Global Design Tokens
+   Apply theme by setting data-theme="light" | "dark" on <html>
+   ============================================================ */
+
+/* --- Light --- */
+[data-theme="light"] {
+  --color-bg:             #ffffff;
+  --color-surface:        #f6f8fa;
+  --color-surface-2:      #eaeef2;
+  --color-border:         #d0d7de;
+  --color-border-subtle:  #eaeef2;
+  --color-text:           #1f2328;
+  --color-muted:          #656d76;
+  --color-accent:         #0969da;
+  --color-accent-hover:   #0860ca;
+  --color-accent-fg:      #ffffff;
+  --color-danger:         #cf222e;
+  --color-success:        #1a7f37;
+  --color-input-bg:       #ffffff;
+}
+
+/* --- Dark --- */
+[data-theme="dark"] {
+  --color-bg:             #0d1117;
+  --color-surface:        #161b22;
+  --color-surface-2:      #21262d;
+  --color-border:         #30363d;
+  --color-border-subtle:  #21262d;
+  --color-text:           #e6edf3;
+  --color-muted:          #848d97;
+  --color-accent:         #2f81f7;
+  --color-accent-hover:   #388bfd;
+  --color-accent-fg:      #ffffff;
+  --color-danger:         #f85149;
+  --color-success:        #3fb950;
+  --color-input-bg:       #0d1117;
+}
+
+/* --- Shared structural tokens --- */
+:root {
+  /* Typography */
+  --font-ui:   -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --font-size-xs:   0.75rem;   /* 12px */
+  --font-size-sm:   0.875rem;  /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg:   1.125rem;  /* 18px */
+  --font-size-xl:   1.25rem;   /* 20px */
+  --font-size-2xl:  1.5rem;    /* 24px */
+
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+
+  --line-height-tight:   1.25;
+  --line-height-base:    1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing (4px base) */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+
+  /* Border radius */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 0 rgba(31, 35, 40, 0.04);
+  --shadow-md: 0 3px 6px rgba(140, 149, 159, 0.15);
+
+  /* Transitions */
+  --transition-base: 80ms ease;
+}
